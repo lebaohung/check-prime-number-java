@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("CHECK PRIME NUMBER.");
-        System.out.print("Enter number: ");
+        System.out.print("Enter positive integer number: ");
         Scanner scanner = new Scanner(System.in);
         String yearStr = scanner.nextLine();
         if(yearStr.matches("^(-?)[0-9]+$") ) {
@@ -29,7 +29,7 @@ public class Main {
                 }
             }
         } else {
-            System.out.println("\nInvalid input!");
+            System.out.println("\n" + yearStr + " : Invalid input!");
             main(args);
         }
     }
